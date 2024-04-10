@@ -1,10 +1,14 @@
 <script setup>
 import TextInput from "@/Components/TextInput.vue";
 import GroupItem from "@/Components/app/GroupItem.vue";
+import { ref } from "vue";
+
+const searchKeyword = ref("");
 </script>
 
 <template>
     <h2 class="text-2xl font-bold px-3">My Groups</h2>
+    <TextInput v-model="searchKeyword" placeholder="type to search" />
     <div class="py-8">
         <div v-if="false">
             <div class="text-gray-400 flex text-center justify-center">
