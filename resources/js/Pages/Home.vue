@@ -19,6 +19,11 @@ defineProps();
                 <div v-else="">
                     <GroupItem
                         image="https://picsum.photos/100"
+                        title="Laravel Developers"
+                        description="laravel developers lorem ipsum"
+                    />
+                    <GroupItem
+                        image="https://picsum.photos/100"
                         title="Vue Developers"
                         description="laravel developers lorem ipsum"
                     />
