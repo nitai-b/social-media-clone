@@ -24,13 +24,12 @@ function isImage(attachment) {
                     <a class="hover:underline" href="javascript:void(0)">
                         {{ post.user.name }}
                     </a>
-                    >
                     <a
                         class="hover:underline"
                         v-if="post.group !== null"
                         href="javascript:void(0)"
                     >
-                        {{ post.group.name }}
+                        | {{ post.group.name }}
                     </a>
                 </h4>
 
@@ -59,14 +58,14 @@ function isImage(attachment) {
                     class="aspect-square bg-blue-50 flex flex-col justify-center items-center relative"
                 >
                     <button
-                        class="absolute w-8 h-8 bg-gray-400 right-2 top-2 cursor-pointer rounded flex items-center justify-center hover:bg-gray-700 text-white"
+                        class="absolute w-8 h-8 bg-gray-700 right-2 top-2 cursor-pointer rounded flex items-center justify-center hover:bg-gray-800 text-white"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke-width="1.5"
-                            stroke="black"
+                            stroke="white"
                             class="w-4 h-4"
                         >
                             <path
@@ -81,7 +80,10 @@ function isImage(attachment) {
                         :src="attachment.url"
                         class="object-cover aspect-square"
                     />
-                    <div v-else>
+                    <div
+                        v-else
+                        class="flex flex-col items-center justify-center"
+                    >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -96,6 +98,7 @@ function isImage(attachment) {
                                 d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"
                             />
                         </svg>
+                        {{ attachment.name }}
                     </div>
                 </div>
             </div>
