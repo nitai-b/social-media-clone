@@ -19,6 +19,8 @@
     },
     "dependencies": {
         "@headlessui/vue": "^1.7.19",
+        "@vue-hero-icons/outline": "^1.7.2",
+        "@vue-hero-icons/solid": "^1.7.2",
         "vue-moment": "^4.1.0"
     }
 }
