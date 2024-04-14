@@ -11,7 +11,7 @@ function isImage(attachment) {
 </script>
 
 <template>
-    <div class="bg-white border rounded p-4 my-2">
+    <div class="bg-white border rounded p-4 mb">
         <div class="flex gap-2 mb-3">
             <a href="javascript:void(0)">
                 <img

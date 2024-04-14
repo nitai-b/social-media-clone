@@ -48,7 +48,7 @@ const post2 = {
 </script>
 
 <template>
-    <div>
+    <div class="flex-1 overflow-auto">
         <PostItem :post="post1" />
         <PostItem :post="post2" />
     </div>
