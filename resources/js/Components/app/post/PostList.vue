@@ -1,5 +1,5 @@
 <script setup>
-import PostItem from "@/Components/app/PostItem.vue";
+import PostItem from "@/Components/app/post/PostItem.vue";
 import moment from "moment";
 
 const post1 = {
