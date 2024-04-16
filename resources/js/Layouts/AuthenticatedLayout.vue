@@ -158,7 +158,7 @@ const showingNavigationDropdown = ref(false);
         </header>
 
         <!-- Page Content -->
-        <main class="flex flex-1 overflow-hidden">
+        <main class="flex flex-1 overflow-auto">
             <slot />
         </main>
     </div>
